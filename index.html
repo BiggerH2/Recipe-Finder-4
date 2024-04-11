@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Finder</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Include Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Recipe Finder</h1>
+        <p>Discover recipes based on ingredients you have</p>
+    </header>
+    <main id="main-content">
+        <!-- Search Form -->
+        <div class="search-container">
+            <input type="text" id="ingredient-input" placeholder="Enter ingredients...">
+            <button id="search-button">Search</button>
+        </div>
+        <div id="recipe-results"></div> <!-- This div will display search results -->
+        <!-- Login Button -->
+        <a href="login.html" class="login-button">Login</a>
+    </main>
+    <footer>
+        <p>&copy; 2024 Recipe Finder. All rights reserved.</p>
+    </footer>
+    <!-- Include Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/10.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.10.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.10.0/firebase-auth.js"></script>
+    <!-- Include Firebase configuration -->
+    <script src="firebase-config.js"></script>
+    <!-- Include index.js -->
+    <script src="index.js" type="module"></script>
+</body>
+</html>
+

@@ -1,0 +1,45 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Finder - Login</title>
+    <!-- Link the login-specific CSS file -->
+    <link rel="stylesheet" href="login.css">
+    <!-- Include Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth.js"></script>
+    <!-- Include Firebase configuration -->
+    <script src="firebase-config.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Recipe Finder</h1>
+        <p>Discover recipes based on ingredients you have</p>
+    </header>
+    <main id="main-content">
+        <!-- Login Form -->
+        <form id="login-form">
+            <h2>Login</h2>
+            <input type="email" id="email" placeholder="Email">
+            <input type="password" id="password" placeholder="Password">
+            <button onclick="login()">Login</button>
+        </form>
+
+        <!-- Registration Form -->
+        <div id="registration-form">
+            <h2>Register</h2>
+            <input type="text" id="name" placeholder="Full Name">
+            <input type="email" id="email" placeholder="Email">
+            <input type="password" id="password" placeholder="Password">
+            <button onclick="register()">Register</button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Recipe Finder. All rights reserved.</p>
+    </footer>
+
+    <!-- Include the login-specific JavaScript file -->
+    <script src="index-login.js"></script>
+</body>
+</html>
